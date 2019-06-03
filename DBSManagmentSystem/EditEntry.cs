@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace DBSManagmentSystem
 {
-    public partial class Form1 : Form
+    public partial class EditEntry : Form
     {
-        public Form1()
+        public EditEntry()
         {
             InitializeComponent();
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
         }
     }
 }

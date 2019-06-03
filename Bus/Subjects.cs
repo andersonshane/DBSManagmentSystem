@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Bus
 {
-    class Subjects
+    public enum Subjects
     {
+        Coumputer_Science,
+        Applied_Physics,
+        Arts,
+        Economics,
+        Business_Studies,
     }
 }
