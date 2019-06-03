@@ -1,0 +1,91 @@
+﻿Assessment  
+The following is the assignment as set out for the module of Advanced Programming.  The assignment is an Individual assignment.  Code must be written in C# with MS SQL Server Backend.   
+
+The following table illustrates the percentage allocation for each individual part of the assignment.  
+
+Part Breakdown of Marks 
+
+C# Presentation Tier 20% 
+C# Business Tier 15% 
+C# Data Tier 15% 
+SQL Database  15% 
+Technical Merit and Innovation 15%
+UML 10% 
+Code Structure, Layout and Adherence to Specifications 10%
+
+Assessment Specification
+
+You have been asked to develop a Student Management System for DBS. When the application is run a list of Students must be displayed to the user in a grid format. The software must allow users to enter details relating to a new Student in addition to updating existing students and removing a student from the system. 
+
+A sample of the data relating to a Student can be found in the table below:
+
+First Name	Surname	Student Number	County	Country	Course
+Joe	Smith	1712345	Dublin	Ireland	Software Development
+Mary	Jones	1712346	Galway	Ireland	Arts
+John	Doe	1712347	Donegal	Ireland	Business
+
+
+The basic requirements are described in the following table.
+
+Requirement	Description
+REQ 1	
+The desktop application must be built using the .Net Framework with a SQL Server backend. It has been suggested to build the application using a tiered architecture.
+
+
+REQ 2	When the application is launched, a user must be presented with a screen to allow them to login.   
+A menu will always be present at the top of the application; however the contents of the menu are context specific. When the application is initially launched the menu should have the following structure.
+•	Level 1 File 
+•	Level 2 Login Exit   
+
+REQ 3	
+In order to ensure appropriate use of the application only internal staff maybe allowed use this software. As a result a user must login to the application. The username can be displayed in clear text, however the password should be masked using a * for each character of the password.  
+If the user enters an incorrect username and/or password a message should appear informing them so.  
+
+
+
+
+
+REQ 4	Once a user has successfully logged into the application the menu context will change. The menu should now display the following:  
+
+File -- Student 
+
+Log Out -- Exit  -- New Student -- Edit Student – Delete Student -  View Database History
+
+REQ 5	In addition to updating the menu upon a successfully login a grid should be displayed containing information relating to existing students.   
+
+
+REQ 6	The user must be able to enrol a new Student. To do this they select the “New Student” menu item under “Student” from the menu bar.   
+The following data must be captured:  
+
+
+Name	Description	Data type
+First Name	The first name 	String
+Surname	The surname 	String
+Email	The email address 	String
+Phone	The phone number 	String
+Address Line 1	The first line postal address	String
+Address Line 2	The second line in the address	String
+City	The city or town postal address	String
+County	The county postal address	Drop down list of the counties of Ireland
+Level	The course can be either a Postgrad or a Undergrad	Radio buttons
+Course	Insert at least 5 courses	Drop down list
+Student Number	The new number for the Student	Int (8 digits)
+
+
+REQ 7	The user of the application must be able to update/edit existing Students.
+The following fields should be read only. That is the user should not be able to modify the student using this screen.  
+•	First Name 
+•	Surname 
+•	Course
+All other fields should be pre-populated with the relevant data for the student being updated.  
+As per REQ6, the grid displaying all students should be updated to reflect any changes in information.  
+
+REQ 8	The system should provide a means to serialise the details of a specific Student into an XML format.
+
+REQ 9	The system will need to be documented with detailed Class Diagrams, Use Case Diagrams and Sequence Diagrams.
+
+
+ NOTE:  
+•	You must submit all your C# code, project(s) and solution files along with any other supporting documentation.  
+•	You must also submit all your SQL code, including a create scripts for any tables and/or stored procedures you have used. 
+•	Marks may be deducted if files or code is not submitted/omitted.  
